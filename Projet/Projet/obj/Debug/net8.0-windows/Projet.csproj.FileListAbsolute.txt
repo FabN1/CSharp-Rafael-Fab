@@ -18,3 +18,24 @@ H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.pdb
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.genruntimeconfig.cache
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\ref\Projet.dll
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Projet.exe
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Projet.deps.json
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Projet.runtimeconfig.json
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Projet.dll
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Projet.pdb
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet_MarkupCompile.cache
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet_MarkupCompile.lref
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.g.resources
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.AssemblyInfoInputs.cache
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.AssemblyInfo.cs
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.CoreCompileInputs.cache
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.sourcelink.json
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.dll
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\refint\Projet.dll
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.pdb
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.genruntimeconfig.cache
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\ref\Projet.dll
