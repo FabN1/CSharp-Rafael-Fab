@@ -1,0 +1,65 @@
+﻿<Window x:Class="Projet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800" Background="Beige">
+
+    <Grid Margin="20" Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Padding="20" Background="Beige"  CornerRadius="10" Margin="0 0 0 20" BorderBrush="#ccc" BorderThickness="1">
+
+            <!-- Section Login -->
+            <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0 0 0 20">
+                <TextBlock Text="Login" FontWeight="Bold" FontSize="18" Margin="0 0 0 10"/>
+                <StackPanel Orientation="Horizontal" Margin="0 5 0 5">
+                    <TextBlock Text="Nom d'utilisateur:" Width="120"/>
+                    <TextBox x:Name="UsernameTextBox" Width="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 5 0 5">
+                    <TextBlock Text="Mot de passe:" Width="120"/>
+                    <PasswordBox x:Name="PasswordBox" Width="200"/>
+                </StackPanel>
+                <Button Content="Connexion" Width="120" Height="30" Margin="0 10 0 0" 
+                        Background="#4CAF50" Foreground="White" FontWeight="Bold"
+                        BorderBrush="#388E3C" Click="Connexion_Click"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Padding="10" Background="White" CornerRadius="10" Margin="0 0 0 20">
+            <!-- Section Catégorie -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 20" Visibility="Collapsed" x:Name="CategoriePanel">
+                <TextBlock Text="Catégorie:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                <ComboBox x:Name="CategorieComboBox" Width="200" SelectionChanged="CategorieComboBox_SelectionChanged"/>
+            </StackPanel>
+        </Border>
+
+        
+        <!-- Section Élément + Article -->
+        <Grid Grid.Row="2" Visibility="Collapsed" x:Name="ContenuPanel">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Liste des éléments -->
+            <StackPanel>
+                <TextBlock Text="Éléments" FontWeight="Bold" Margin="0 0 0 5"/>
+                <ListBox x:Name="ElementsListBox" SelectionChanged="ElementsListBox_SelectionChanged"/>
+            </StackPanel>
+
+            <!-- Liste des articles -->
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Articles" FontWeight="Bold" Margin="0 0 0 5"/>
+                <ListBox x:Name="ArticlesListBox"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
