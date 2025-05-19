@@ -20,29 +20,7 @@ namespace Projet
             DataContext = this; // Pour le Binding dans XAML (si utilisé)
         }
 
-        private void Connexion_Click(object sender, RoutedEventArgs e)
-        {
-            string username = UsernameTextBox.Text;
-            string password = PasswordBox.Password;
-
-            if (username == "admin" && password == "1234")
-            {
-                MessageBox.Show("Connexion réussie !");
-                ContenuPanel.Visibility = Visibility.Visible;
-
-                // Chargement de données fictives pour test
-                ChargerDonneesDeTest();
-
-                // Lier les données aux DataGrids
-                ClientsDataGrid.ItemsSource = Clients;
-                ObjetsDataGrid.ItemsSource = Produits;
-                CommandesDataGrid.ItemsSource = Commandes;
-            }
-            else
-            {
-                MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
-            }
-        }
+        
 
         private void ChargerDonneesDeTest()
         {

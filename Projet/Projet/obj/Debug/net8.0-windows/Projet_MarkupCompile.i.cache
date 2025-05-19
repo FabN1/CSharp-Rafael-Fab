@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\
 Projet
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\App.xaml
-3-2070064710
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\App.xaml
+4-398665990
 
-15-1274550171
-1981839832580
-View\AjouterClientWindow.xaml;View\AjouterObjetWindow.xaml;View\MainWindow.xaml;
+16-1442810134
+198-344842731
+View\AjouterClientWindow.xaml;View\AjouterObjetWindow.xaml;View\LoginWindow.xaml;View\MainWindow.xaml;
 
-False
+True
 

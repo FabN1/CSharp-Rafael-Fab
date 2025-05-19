@@ -14,31 +14,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Barre de connexion -->
-        <Border Grid.Row="0" Padding="10" Background="Beige" CornerRadius="5" Margin="0 0 0 10" BorderBrush="#ccc" BorderThickness="1">
-            <StackPanel Orientation="Vertical">
-                <TextBlock Text="Login" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" HorizontalAlignment="Center"/>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <StackPanel Margin="10,0">
-                        <TextBlock Text="Nom d'utilisateur" FontSize="12"/>
-                        <TextBox x:Name="UsernameTextBox" Width="120"/>
-                    </StackPanel>
-                    <StackPanel Margin="10,0">
-                        <TextBlock Text="Mot de passe" FontSize="12"/>
-                        <PasswordBox x:Name="PasswordBox" Width="120"/>
-                    </StackPanel>
-                    <Button Content="Connexion" Width="100" Height="40" VerticalAlignment="Bottom"
-                            Background="#4CAF50" Foreground="White" FontWeight="Bold"
-                            BorderBrush="#388E3C" Click="Connexion_Click" Margin="10,0"/>
-                </StackPanel>
-            </StackPanel>
-        </Border>
-
-        <!-- Section Catégorie masquée -->
-        <Border Grid.Row="1" Padding="10" Background="White" CornerRadius="10" Margin="0 0 0 20" Visibility="Collapsed"/>
+       
 
         <!-- Interface principale -->
-        <Grid Grid.Row="2" Visibility="Collapsed" x:Name="ContenuPanel">
+        <Grid Grid.Row="2" Visibility="Visible" x:Name="ContenuPanel">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
