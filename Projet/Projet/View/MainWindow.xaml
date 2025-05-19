@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800" Background="Beige" MinHeight="400" MinWidth="600">
+        Title="MainWindow" Height="720" Width="1280" Background="Beige" MinHeight="600" MinWidth="1000">
 
     <Grid Margin="20" Background="Bisque">
         <Grid.RowDefinitions>
@@ -14,52 +14,99 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Padding="20" Background="Beige"  CornerRadius="10" Margin="0 0 0 20" BorderBrush="#ccc" BorderThickness="1">
-
-            <!-- Section Login -->
-            <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0 0 0 20">
-                <TextBlock Text="Login" FontWeight="Bold" FontSize="18" Margin="0 0 0 10"/>
-                <StackPanel Orientation="Horizontal" Margin="0 5 0 5">
-                    <TextBlock Text="Nom d'utilisateur:" Width="120"/>
-                    <TextBox x:Name="UsernameTextBox" Width="200"/>
+        <!-- Barre de connexion -->
+        <Border Grid.Row="0" Padding="10" Background="Beige" CornerRadius="5" Margin="0 0 0 10" BorderBrush="#ccc" BorderThickness="1">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Login" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Margin="10,0">
+                        <TextBlock Text="Nom d'utilisateur" FontSize="12"/>
+                        <TextBox x:Name="UsernameTextBox" Width="120"/>
+                    </StackPanel>
+                    <StackPanel Margin="10,0">
+                        <TextBlock Text="Mot de passe" FontSize="12"/>
+                        <PasswordBox x:Name="PasswordBox" Width="120"/>
+                    </StackPanel>
+                    <Button Content="Connexion" Width="100" Height="40" VerticalAlignment="Bottom"
+                            Background="#4CAF50" Foreground="White" FontWeight="Bold"
+                            BorderBrush="#388E3C" Click="Connexion_Click" Margin="10,0"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0 5 0 5">
-                    <TextBlock Text="Mot de passe:" Width="120"/>
-                    <PasswordBox x:Name="PasswordBox" Width="200"/>
-                </StackPanel>
-                <Button Content="Connexion" Width="120" Height="30" Margin="0 10 0 0" 
-                        Background="#4CAF50" Foreground="White" FontWeight="Bold"
-                        BorderBrush="#388E3C" Click="Connexion_Click"/>
             </StackPanel>
         </Border>
 
-        <Border Grid.Row="1" Padding="10" Background="White" CornerRadius="10" Margin="0 0 0 20">
-            <!-- Section Catégorie -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 20" Visibility="Collapsed" x:Name="CategoriePanel">
-                <TextBlock Text="Catégorie:" VerticalAlignment="Center" Margin="0 0 10 0"/>
-                <ComboBox x:Name="CategorieComboBox" Width="200" SelectionChanged="CategorieComboBox_SelectionChanged"/>
-            </StackPanel>
-        </Border>
+        <!-- Section Catégorie masquée -->
+        <Border Grid.Row="1" Padding="10" Background="White" CornerRadius="10" Margin="0 0 0 20" Visibility="Collapsed"/>
 
-        
-        <!-- Section Élément + Article -->
+        <!-- Interface principale -->
         <Grid Grid.Row="2" Visibility="Collapsed" x:Name="ContenuPanel">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
 
-            <!-- Liste des éléments -->
-            <StackPanel>
-                <TextBlock Text="Éléments" FontWeight="Bold" Margin="0 0 0 5"/>
-                <ListBox x:Name="ElementsListBox" SelectionChanged="ElementsListBox_SelectionChanged"/>
-            </StackPanel>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
 
-            <!-- Liste des articles -->
-            <StackPanel Grid.Column="1">
-                <TextBlock Text="Articles" FontWeight="Bold" Margin="0 0 0 5"/>
-                <ListBox x:Name="ArticlesListBox"/>
-            </StackPanel>
+                <!-- Clients avec bouton Ajouter/Éditer -->
+                <GroupBox Header="CLIENTS" Margin="5" FontWeight="Bold">
+                    <DockPanel>
+                        <Button Content="Ajouter Client" DockPanel.Dock="Top" Margin="5" Click="AjouterClient_Click"/>
+                        <DataGrid x:Name="ClientsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" Margin="5">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="*"/>
+                                <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*"/>
+                                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </GroupBox>
+
+                <!-- Objets avec bouton Ajouter -->
+                <GroupBox Header="OBJETS" Grid.Column="1" Margin="5" FontWeight="Bold">
+                    <DockPanel>
+                        <Button Content="Ajouter Objet" DockPanel.Dock="Top" Margin="5" Click="AjouterObjet_Click"/>
+                        <DataGrid x:Name="ObjetsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="5">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="*"/>
+                                <DataGridTextColumn Header="Type Bois" Binding="{Binding nomBois}" Width="*"/>
+                                <DataGridTextColumn Header="Prix (€)" Binding="{Binding Prix}" Width="*"/>
+                                <DataGridTextColumn Header="Usage" Binding="{Binding Usage}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </GroupBox>
+
+                <!-- Commande -->
+                <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="PASSER COMMANDE" Width="150" Height="200"
+                            Background="LimeGreen" Foreground="White" FontWeight="Bold" FontSize="16" Click="PasserCommande_Click"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- Commandes -->
+            <GroupBox Header="COMMANDES" Grid.Row="1" Margin="5" FontWeight="Bold">
+                <DockPanel>
+                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5">
+                        <TextBlock Text="Filtrer par date :" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <DatePicker x:Name="DateFilterPicker" Width="150" SelectedDateChanged="DateFilterPicker_SelectedDateChanged"/>
+                    </StackPanel>
+                    <DataGrid x:Name="CommandesDataGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                            <DataGridTextColumn Header="Client" Binding="{Binding Client}" Width="*"/>
+                            <DataGridTextColumn Header="Objet" Binding="{Binding Objet}" Width="*"/>
+                            <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*"/>
+                            <DataGridTextColumn Header="Total (€)" Binding="{Binding Total}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </GroupBox>
         </Grid>
     </Grid>
 </Window>

@@ -1,33 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using Projet.Model.Entites;
+using System;
+using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace Projet
 {
     public partial class MainWindow : Window
     {
-        private Dictionary<string, Dictionary<string, List<string>>> data = new Dictionary<string, Dictionary<string, List<string>>>()
-        {
-            { "Ustensils", new Dictionary<string, List<string>>{
-                { "cuilleres", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "bols", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "couteaux", new List<string> { "cuilleres", "bols", "couteaux" } }
-            }},
+        // Collections liées au UI via DataBinding
+        public ObservableCollection<Clients> Clients { get; set; } = new ObservableCollection<Clients>();
+        public ObservableCollection<Produit> Produits { get; set; } = new ObservableCollection<Produit>();
+        public ObservableCollection<Commande> Commandes { get; set; } = new ObservableCollection<Commande>();
 
-            { "Figurines", new Dictionary<string, List<string>>{
-                { "Animaux", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "Personnages", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "Objets", new List<string> { "cuilleres", "bols", "couteaux" } }
-            }},
-            { "Meubles", new Dictionary<string, List<string>>{
-                { "Tables", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "Chaisses", new List<string> { "cuilleres", "bols", "couteaux" } },
-                { "Armoires", new List<string> { "cuilleres", "bols", "couteaux" } }
-            }},
-        };
+        private int commandeIdCounter = 1;
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this; // Pour le Binding dans XAML (si utilisé)
         }
 
         private void Connexion_Click(object sender, RoutedEventArgs e)
@@ -38,10 +28,15 @@ namespace Projet
             if (username == "admin" && password == "1234")
             {
                 MessageBox.Show("Connexion réussie !");
-                CategoriePanel.Visibility = Visibility.Visible;
                 ContenuPanel.Visibility = Visibility.Visible;
 
-                CategorieComboBox.ItemsSource = data.Keys;
+                // Chargement de données fictives pour test
+                ChargerDonneesDeTest();
+
+                // Lier les données aux DataGrids
+                ClientsDataGrid.ItemsSource = Clients;
+                ObjetsDataGrid.ItemsSource = Produits;
+                CommandesDataGrid.ItemsSource = Commandes;
             }
             else
             {
@@ -49,26 +44,90 @@ namespace Projet
             }
         }
 
-        private void CategorieComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ChargerDonneesDeTest()
         {
-            string selectedCategorie = CategorieComboBox.SelectedItem as string;
+            // Types de bois
+            var boisChene = new TypeDeBois(1, "Chêne");
+            var boisHetre = new TypeDeBois(2, "Hêtre");
 
-            if (selectedCategorie != null && data.ContainsKey(selectedCategorie))
+            // Clients
+            Clients.Add(new Clients(1, "Alice", "Particulier", "alice@email.com"));
+            Clients.Add(new Clients(2, "Bob", "Entreprise", "bob@corp.com"));
+
+            // Produits
+            Produits.Add(new Ustensils(1, "Cuillère", boisChene, 5.0f, "Cuisine"));
+            Produits.Add(new Figurines(2, "Lion", boisHetre, 20.0f, "Animaux"));
+            Produits.Add(new Meubles(3, "Table", boisChene, 150.0f, "Salle à manger"));
+
+            // Commande de test
+            var commande = new Commande(commandeIdCounter++, Clients[0]);
+            commande.AjouterProduit(Produits[0]);
+            commande.AjouterProduit(Produits[2]);
+            Commandes.Add(commande);
+        }
+        private void AjouterClient_Click(object sender, RoutedEventArgs e)
+        {
+            var fenetre = new AjouterClientWindow();
+            fenetre.Owner = this;
+
+            if (fenetre.ShowDialog() == true)
             {
-                ElementsListBox.ItemsSource = data[selectedCategorie].Keys;
-                ArticlesListBox.ItemsSource = null; // Reset articles
+                int newId = Clients.Count + 1;
+                Clients.Add(new Clients(newId, fenetre.Nom, fenetre.Type, fenetre.Email));
             }
         }
 
-        private void ElementsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            string selectedCategorie = CategorieComboBox.SelectedItem as string;
-            string selectedElement = ElementsListBox.SelectedItem as string;
 
-            if (selectedCategorie != null && selectedElement != null && data[selectedCategorie].ContainsKey(selectedElement))
+        private void AjouterObjet_Click(object sender, RoutedEventArgs e)
+        {
+            var fenetre = new AjouterObjetWindow();
+            fenetre.Owner = this;
+
+            if (fenetre.ShowDialog() == true)
             {
-                ArticlesListBox.ItemsSource = data[selectedCategorie][selectedElement];
+                int newId = Produits.Count + 1;
+                var bois = new TypeDeBois(1, fenetre.TypeBois);
+                Produits.Add(new Ustensils(newId, fenetre.Nom, bois, fenetre.Prix, fenetre.Usage));
             }
         }
+
+
+        private void PasserCommande_Click(object sender, RoutedEventArgs e)
+        {
+            var clientSelectionne = ClientsDataGrid.SelectedItem as Clients;
+            var produitSelectionne = ObjetsDataGrid.SelectedItem as Produit;
+
+            if (clientSelectionne == null)
+            {
+                MessageBox.Show("Veuillez sélectionner un client.");
+                return;
+            }
+
+            if (produitSelectionne == null)
+            {
+                MessageBox.Show("Veuillez sélectionner un produit.");
+                return;
+            }
+
+            var commande = new Commande(commandeIdCounter++, clientSelectionne);
+            commande.AjouterProduit(produitSelectionne);
+
+            Commandes.Add(commande);
+            MessageBox.Show("Commande ajoutée !");
+        }
+
+
+        private void DateFilterPicker_SelectedDateChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            // Exemple simple : récupérer la date sélectionnée
+            var datePicker = sender as System.Windows.Controls.DatePicker;
+            if (datePicker != null && datePicker.SelectedDate.HasValue)
+            {
+                DateTime selectedDate = datePicker.SelectedDate.Value;
+                MessageBox.Show($"Date sélectionnée : {selectedDate.ToShortDateString()}");
+                // Ici, tu pourrais filtrer ta liste Commandes en fonction de cette date
+            }
+        }
+
     }
 }

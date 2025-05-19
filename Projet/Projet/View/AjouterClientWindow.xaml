@@ -1,0 +1,20 @@
+﻿<Window x:Class="Projet.AjouterClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajouter un client" Height="250" Width="300" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <TextBlock Text="Nom" />
+        <TextBox x:Name="NomTextBox" />
+
+        <TextBlock Text="Type" Margin="0,10,0,0"/>
+        <ComboBox x:Name="TypeComboBox">
+            <ComboBoxItem Content="Particulier" IsSelected="True"/>
+            <ComboBoxItem Content="Entreprise"/>
+        </ComboBox>
+
+        <TextBlock Text="Email" Margin="0,10,0,0"/>
+        <TextBox x:Name="EmailTextBox" />
+
+        <Button Content="Valider" Margin="0,15,0,0" Click="Valider_Click"/>
+    </StackPanel>
+</Window>
