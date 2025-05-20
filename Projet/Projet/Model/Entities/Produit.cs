@@ -9,6 +9,8 @@ namespace Projet.Model.Entites
         protected string nom;
         protected TypeDeBois typeDeBois;
 
+        public virtual string Categorie => "Inconnu";
+
         protected Produit(int id, string nom, TypeDeBois typeDeBois)
         {
             this.id = id;
@@ -33,8 +35,9 @@ namespace Projet.Model.Entites
 
         public override string ToString()
         {
-            return $"Produit: {nom}, Bois: {typeDeBois.NomBois}";
+            return $"{nom}; {typeDeBois.NomBois}";
         }
+
 
         public override bool Equals(object obj)
         {

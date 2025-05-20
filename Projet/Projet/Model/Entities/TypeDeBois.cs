@@ -24,7 +24,7 @@ namespace Projet.Model.Entites
 
         public override string ToString()
         {
-            return $"nom du bois: {nomBois} ID: {id}";
+            return $"{nomBois}";
         }
 
         public override bool Equals(object obj)

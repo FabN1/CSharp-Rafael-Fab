@@ -8,6 +8,7 @@ namespace Projet.Model.Entites
     {
         private float prix;
         private string usage;
+        public override string Categorie => "Ustensil";
 
         public Ustensils(int id, string nom, TypeDeBois typeDeBois, float prix, string usage)
             : base(id, nom, typeDeBois)

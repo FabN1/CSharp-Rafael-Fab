@@ -2,6 +2,11 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Xml;
+using Newtonsoft.Json;
+using System.IO;
+using System.Text.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Projet
 {
@@ -18,6 +23,9 @@ namespace Projet
         {
             InitializeComponent();
             DataContext = this; // Pour le Binding dans XAML (si utilisé)
+            ClientsDataGrid.ItemsSource = Clients;
+            ObjetsDataGrid.ItemsSource = Produits;
+            CommandesDataGrid.ItemsSource = Commandes;
         }
 
         
@@ -65,9 +73,21 @@ namespace Projet
             {
                 int newId = Produits.Count + 1;
                 var bois = new TypeDeBois(1, fenetre.TypeBois);
-                Produits.Add(new Ustensils(newId, fenetre.Nom, bois, fenetre.Prix, fenetre.Usage));
+
+                Produit nouveauProduit = fenetre.CategorieObjet switch
+                {
+                    "Ustensil" => new Ustensils(newId, fenetre.Nom, bois, fenetre.Prix, fenetre.Usage),
+                    "Figurine" => new Figurines(newId, fenetre.Nom, bois, fenetre.Prix, fenetre.Usage),
+                    "Meuble" => new Meubles(newId, fenetre.Nom, bois, fenetre.Prix, fenetre.Usage)
+                };
+
+                if (nouveauProduit != null)
+                {
+                    Produits.Add(nouveauProduit);
+                }
             }
         }
+
 
 
         private void PasserCommande_Click(object sender, RoutedEventArgs e)
@@ -106,6 +126,100 @@ namespace Projet
                 // Ici, tu pourrais filtrer ta liste Commandes en fonction de cette date
             }
         }
+
+
+        public void SauvegarderEnJson(string cheminFichier)
+        {
+            var donnees = new DonneesApplication
+            {
+                Clients = Clients.ToList(),
+                Produits = Produits.ToList(),
+                Commandes = Commandes.ToList()
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters = { new ProduitJsonConverter() } // pour gérer les types dérivés
+            };
+
+            File.WriteAllText(cheminFichier, JsonSerializer.Serialize(donnees, options));
+        }
+
+        public class ProduitJsonConverter : System.Text.Json.Serialization.JsonConverter<Produit>
+        {
+            public override Produit Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                using var jsonDoc = JsonDocument.ParseValue(ref reader);
+                var jsonObject = jsonDoc.RootElement;
+                var type = jsonObject.GetProperty("Categorie").GetString();
+
+                return type switch
+                {
+                    "Ustensil" => JsonSerializer.Deserialize<Ustensils>(jsonObject.GetRawText(), options),
+                    "Figurine" => JsonSerializer.Deserialize<Figurines>(jsonObject.GetRawText(), options),
+                    "Meuble" => JsonSerializer.Deserialize<Meubles>(jsonObject.GetRawText(), options),
+                    _ => throw new NotSupportedException($"Type de produit inconnu : {type}")
+                };
+            }
+
+            public override void Write(Utf8JsonWriter writer, Produit value, JsonSerializerOptions options)
+            {
+                JsonSerializer.Serialize(writer, (object)value, value.GetType(), options);
+            }
+        }
+
+        public void ChargerDepuisJson(string cheminFichier)
+        {
+            if (!File.Exists(cheminFichier)) return;
+
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new ProduitJsonConverter() }
+            };
+
+            var donnees = JsonSerializer.Deserialize<DonneesApplication>(File.ReadAllText(cheminFichier), options);
+            if (donnees != null)
+            {
+                Clients.Clear();
+                foreach (var c in donnees.Clients) Clients.Add(c);
+
+                Produits.Clear();
+                foreach (var p in donnees.Produits) Produits.Add(p);
+
+                Commandes.Clear();
+                foreach (var cmd in donnees.Commandes) Commandes.Add(cmd);
+            }
+        }
+        private void SauvegarderJson_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Microsoft.Win32.SaveFileDialog
+            {
+                Filter = "Fichiers JSON (*.json)|*.json",
+                FileName = "donnees.json"
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                SauvegarderEnJson(dialog.FileName);
+                MessageBox.Show("Données sauvegardées avec succès !");
+            }
+        }
+
+        private void ChargerJson_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "Fichiers JSON (*.json)|*.json"
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                ChargerDepuisJson(dialog.FileName);
+                MessageBox.Show("Données chargées avec succès !");
+            }
+        }
+
 
     }
 }

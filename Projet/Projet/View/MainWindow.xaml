@@ -30,6 +30,7 @@
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
+                   
                 <!-- Clients avec bouton Ajouter/Éditer -->
                 <GroupBox Header="CLIENTS" Margin="5" FontWeight="Bold">
                     <DockPanel>
@@ -53,8 +54,9 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
                                 <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="*"/>
-                                <DataGridTextColumn Header="Type Bois" Binding="{Binding nomBois}" Width="*"/>
+                                <DataGridTextColumn Header="Type Bois" Binding="{Binding TypeDeBois}" Width="*"/>
                                 <DataGridTextColumn Header="Prix (€)" Binding="{Binding Prix}" Width="*"/>
+                                <DataGridTextColumn Header="Catégorie" Width="*" Binding="{Binding Categorie}"/>
                                 <DataGridTextColumn Header="Usage" Binding="{Binding Usage}" Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
@@ -73,13 +75,18 @@
                 <DockPanel>
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5">
                         <TextBlock Text="Filtrer par date :" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                        <DatePicker x:Name="DateFilterPicker" Width="150" SelectedDateChanged="DateFilterPicker_SelectedDateChanged"/>
+                        <DatePicker x:Name="DateFilterPicker" Width="150" SelectedDateChanged="DateFilterPicker_SelectedDateChanged" Height="26"/>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 10, 0, 10">
+                            <Button Content="Sauvegarder JSON" Margin="5" Padding="10,5" Click="SauvegarderJson_Click"/>
+                            <Button Content="Charger JSON" Margin="5" Padding="10,5" Click="ChargerJson_Click"/>
+                        </StackPanel>
+
                     </StackPanel>
                     <DataGrid x:Name="CommandesDataGrid" AutoGenerateColumns="False" CanUserAddRows="False">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
                             <DataGridTextColumn Header="Client" Binding="{Binding Client}" Width="*"/>
-                            <DataGridTextColumn Header="Objet" Binding="{Binding Objet}" Width="*"/>
+                            <DataGridTextColumn Header="Objet" Binding="{Binding Produit}" Width="*"/>
                             <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*"/>
                             <DataGridTextColumn Header="Total (€)" Binding="{Binding Total}" Width="*"/>
                         </DataGrid.Columns>

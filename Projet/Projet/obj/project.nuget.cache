@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "emlyy/qgl1w=",
+  "dgSpecHash": "FPU0GhqAWww=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rafae\\Source\\Repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fabia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

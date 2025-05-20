@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Controls;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Projet
 {
@@ -20,6 +9,7 @@ namespace Projet
         public string TypeBois { get; private set; }
         public float Prix { get; private set; }
         public string Usage { get; private set; }
+        public string CategorieObjet { get; private set; }
 
         public AjouterObjetWindow()
         {
@@ -34,9 +24,10 @@ namespace Projet
             Prix = prix;
             Usage = UsageTextBox.Text;
 
+            CategorieObjet = ((ComboBoxItem)TypeObjetComboBox.SelectedItem).Content.ToString();
+
             DialogResult = true;
             Close();
         }
     }
-
 }

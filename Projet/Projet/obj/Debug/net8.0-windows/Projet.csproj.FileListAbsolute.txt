@@ -50,3 +50,8 @@ C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-win
 C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.pdb
 C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.genruntimeconfig.cache
 C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\ref\Projet.dll
+H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\LoginWindow.baml
+H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\LoginWindow.g.cs
+H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.AssemblyReference.cache
+H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.Up2Date

@@ -41,7 +41,7 @@ namespace Projet.Model.Entites
 
         public override string ToString()
         {
-            return $"Nom: {nom}, Type: {type}, Email: {email}";
+            return $"{nom}; {type}; {email}";
         }
 
         public override bool Equals(object obj)
