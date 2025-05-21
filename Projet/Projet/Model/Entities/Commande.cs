@@ -20,13 +20,14 @@ namespace Projet.Model.Entites
 
 
         public Commande() { }
-        public Commande(int id, Clients client)
+        public Commande(int id, Clients client, DateTime dateCommande)
         {
-            this.id = id;
-            this.client = client;
-            this.produits = new List<Produit>();
-            this.dateCommande = DateTime.Now;
+            Id = id;
+            Client = client;
+            DateCommande = dateCommande;
+            Produits = new List<Produit>();
         }
+
 
         public int Id
         {

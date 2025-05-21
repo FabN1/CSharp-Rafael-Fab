@@ -30,29 +30,6 @@ namespace Projet
             CommandesDataGrid.ItemsSource = Commandes;
         }
 
-        
-
-        private void ChargerDonneesDeTest()
-        {
-            // Types de bois
-            var boisChene = new TypeDeBois(1, "Chêne");
-            var boisHetre = new TypeDeBois(2, "Hêtre");
-
-            // Clients
-            Clients.Add(new Clients(1, "Alice", "Particulier", "alice@email.com"));
-            Clients.Add(new Clients(2, "Bob", "Entreprise", "bob@corp.com"));
-
-            // Produits
-            Produits.Add(new Ustensils(1, "Cuillère", boisChene, 5.0f, "Cuisine"));
-            Produits.Add(new Figurines(2, "Lion", boisHetre, 20.0f, "Animaux"));
-            Produits.Add(new Meubles(3, "Table", boisChene, 150.0f, "Salle à manger"));
-
-            // Commande de test
-            var commande = new Commande(commandeIdCounter++, Clients[0]);
-            commande.AjouterProduit(Produits[0]);
-            commande.AjouterProduit(Produits[2]);
-            Commandes.Add(commande);
-        }
         private void AjouterClient_Click(object sender, RoutedEventArgs e)
         {
             var fenetre = new AjouterClientWindow();
@@ -95,7 +72,7 @@ namespace Projet
         private void PasserCommande_Click(object sender, RoutedEventArgs e)
         {
             var clientSelectionne = ClientsDataGrid.SelectedItem as Clients;
-            var produitSelectionne = ObjetsDataGrid.SelectedItem as Produit;
+            var objetsSelectionnes = ObjetsDataGrid.SelectedItems;
 
             if (clientSelectionne == null)
             {
@@ -103,18 +80,31 @@ namespace Projet
                 return;
             }
 
-            if (produitSelectionne == null)
+            if (objetsSelectionnes == null || objetsSelectionnes.Count == 0)
             {
-                MessageBox.Show("Veuillez sélectionner un produit.");
+                MessageBox.Show("Veuillez sélectionner un ou plusieurs objets.");
                 return;
             }
 
-            var commande = new Commande(commandeIdCounter++, clientSelectionne);
-            commande.AjouterProduit(produitSelectionne);
+            if (DateFilterPicker.SelectedDate == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une date pour la commande.");
+                return;
+            }
+
+            DateTime dateCommande = DateFilterPicker.SelectedDate.Value;
+            var commande = new Commande(commandeIdCounter++, clientSelectionne, dateCommande);
+
+
+            foreach (Produit produit in objetsSelectionnes)
+            {
+                commande.AjouterProduit(produit);
+            }
 
             Commandes.Add(commande);
-            MessageBox.Show("Commande ajoutée !");
+            MessageBox.Show("Commande avec plusieurs objets ajoutée !");
         }
+
 
 
         private void DateFilterPicker_SelectedDateChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -284,7 +274,54 @@ namespace Projet
             }
         }
 
+        private MyAppParamManager paramManager = new MyAppParamManager();
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            paramManager.LoadRegistryParameter();
+            AppliquerParametres();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            paramManager.SaveRegistryParameter();
+        }
+
+        private void OuvrirParametres_Click(object sender, RoutedEventArgs e)
+        {
+            paramManager.LoadRegistryParameter();
+            var fenetreParametres = new ParametresWindow(paramManager);
+            fenetreParametres.Owner = this;
+
+            if (fenetreParametres.ShowDialog() == true)
+            {
+                // Tu peux éventuellement réagir à la mise à jour ici
+                AppliquerParametres();
+                MessageBox.Show("Paramètres appliqués !");
+            }
+        }
+        private void AppliquerParametres()
+        {
+            // Applique le nom d'utilisateur (par exemple dans le titre)
+            this.Title = $"Application - {paramManager.NomUtilisateur}";
+
+            // Applique la taille de police à tous les éléments principaux
+            this.FontSize = paramManager.TaillePolice;
+
+            // Applique le mode sombre si nécessaire
+            if (paramManager.ModeSombre)
+            {
+                this.Background = System.Windows.Media.Brushes.DarkSlateGray;
+                ContenuPanel.Background = System.Windows.Media.Brushes.Gray;
+                Foreground = System.Windows.Media.Brushes.White;
+            }
+            else
+            {
+                this.Background = System.Windows.Media.Brushes.Beige;
+                ContenuPanel.Background = System.Windows.Media.Brushes.Bisque;
+                Foreground = System.Windows.Media.Brushes.Black;
+            }
+        }
 
 
     }
