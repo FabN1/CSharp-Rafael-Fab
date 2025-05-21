@@ -14,8 +14,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-       
-
         <!-- Interface principale -->
         <Grid Grid.Row="2" Visibility="Visible" x:Name="ContenuPanel">
             <Grid.RowDefinitions>
@@ -30,8 +28,7 @@
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
-                   
-                <!-- Clients avec bouton Ajouter/Éditer -->
+                <!-- Clients -->
                 <GroupBox Header="CLIENTS" Margin="5" FontWeight="Bold">
                     <DockPanel>
                         <Button Content="Ajouter Client" DockPanel.Dock="Top" Margin="5" Click="AjouterClient_Click"/>
@@ -46,7 +43,7 @@
                     </DockPanel>
                 </GroupBox>
 
-                <!-- Objets avec bouton Ajouter -->
+                <!-- Objets -->
                 <GroupBox Header="OBJETS" Grid.Column="1" Margin="5" FontWeight="Bold">
                     <DockPanel>
                         <Button Content="Ajouter Objet" DockPanel.Dock="Top" Margin="5" Click="AjouterObjet_Click"/>
@@ -54,16 +51,16 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
                                 <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="*"/>
-                                <DataGridTextColumn Header="Type Bois" Binding="{Binding TypeDeBois}" Width="*"/>
+                                <DataGridTextColumn Header="Type Bois" Binding="{Binding TypeDeBois.NomBois}" Width="*"/>
                                 <DataGridTextColumn Header="Prix (€)" Binding="{Binding Prix}" Width="*"/>
-                                <DataGridTextColumn Header="Catégorie" Width="*" Binding="{Binding Categorie}"/>
+                                <DataGridTextColumn Header="Catégorie" Binding="{Binding Categorie}" Width="*"/>
                                 <DataGridTextColumn Header="Usage" Binding="{Binding Usage}" Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </DockPanel>
                 </GroupBox>
 
-                <!-- Commande -->
+                <!-- Passer Commande -->
                 <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button Content="PASSER COMMANDE" Width="150" Height="200"
                             Background="LimeGreen" Foreground="White" FontWeight="Bold" FontSize="16" Click="PasserCommande_Click"/>
@@ -76,19 +73,24 @@
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5">
                         <TextBlock Text="Filtrer par date :" VerticalAlignment="Center" Margin="0,0,5,0"/>
                         <DatePicker x:Name="DateFilterPicker" Width="150" SelectedDateChanged="DateFilterPicker_SelectedDateChanged" Height="26"/>
-                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 10, 0, 10">
+
+                        <!-- Boutons -->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="20,0,0,0">
                             <Button Content="Sauvegarder JSON" Margin="5" Padding="10,5" Click="SauvegarderJson_Click"/>
                             <Button Content="Charger JSON" Margin="5" Padding="10,5" Click="ChargerJson_Click"/>
+                            <Button Content="Sauvegarder XML" Margin="5" Padding="10,5" Click="SauvegarderXml_Click"/>
+                            <Button Content="Charger XML" Margin="5" Padding="10,5" Click="ChargerXml_Click"/>
                         </StackPanel>
-
                     </StackPanel>
-                    <DataGrid x:Name="CommandesDataGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+
+                    <!-- Tableau des commandes -->
+                    <DataGrid x:Name="CommandesDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="5">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
-                            <DataGridTextColumn Header="Client" Binding="{Binding Client}" Width="*"/>
-                            <DataGridTextColumn Header="Objet" Binding="{Binding Produit}" Width="*"/>
-                            <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*"/>
-                            <DataGridTextColumn Header="Total (€)" Binding="{Binding Total}" Width="*"/>
+                            <DataGridTextColumn Header="Client" Binding="{Binding Client.Nom}" Width="*"/>
+                            <DataGridTextColumn Header="Nombre Produits" Binding="{Binding Produits.Count}" Width="*"/>
+                            <DataGridTextColumn Header="Date" Binding="{Binding DateCommande}" Width="*"/>
+                            
                         </DataGrid.Columns>
                     </DataGrid>
                 </DockPanel>

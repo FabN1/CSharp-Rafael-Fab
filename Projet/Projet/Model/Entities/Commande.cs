@@ -2,10 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Projet.Model.Entites
 {
     [Serializable]
+    [XmlInclude(typeof(Figurines))]
+    [XmlInclude(typeof(Ustensils))]
+    [XmlInclude(typeof(Meubles))]
+    [XmlInclude(typeof(Clients))]
     public class Commande
     {
         private int id;
@@ -13,6 +18,8 @@ namespace Projet.Model.Entites
         private List<Produit> produits;
         private DateTime dateCommande;
 
+
+        public Commande() { }
         public Commande(int id, Clients client)
         {
             this.id = id;
@@ -21,13 +28,29 @@ namespace Projet.Model.Entites
             this.dateCommande = DateTime.Now;
         }
 
-        public int Id => id;
+        public int Id
+        {
+            get => id;
+            set => id = value;
+        }
 
-        public Clients Client => client;
+        public Clients Client
+        {
+            get => client;
+            set => client = value;
+        }
 
-        public List<Produit> Produits => produits;
+        public List<Produit> Produits
+        {
+            get => produits;
+            set => produits = value;
+        }
 
-        public DateTime DateCommande => dateCommande;
+        public DateTime DateCommande
+        {
+            get => dateCommande;
+            set => dateCommande = value;
+        }
 
         public void AjouterProduit(Produit produit)
         {
@@ -54,6 +77,8 @@ namespace Projet.Model.Entites
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Commande ID: {id} - Client: {client.Nom} - Date: {dateCommande}");
+            sb.AppendLine($"Commande ID: {id} – Client: {(client?.Nom ?? "inconnu")} – Date: {dateCommande}");
+
             foreach (var produit in produits)
             {
                 sb.AppendLine("  " + produit.ToString());

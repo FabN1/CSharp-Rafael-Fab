@@ -8,6 +8,7 @@ namespace Projet.Model.Entites
         protected int id;
         protected string nomBois;
 
+        public TypeDeBois() { }
         public TypeDeBois(int id, string nomBois)
         {
             this.id = id;

@@ -3,10 +3,12 @@ using System;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Xml;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 using System.IO;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using Microsoft.Win32;
 
 namespace Projet
 {
@@ -219,6 +221,70 @@ namespace Projet
                 MessageBox.Show("Données chargées avec succès !");
             }
         }
+
+        private void SauvegarderXml_Click(object sender, RoutedEventArgs e)
+        {
+            var commandeSelectionnee = CommandesDataGrid.SelectedItem as Commande;
+
+            if (commandeSelectionnee == null)
+            {
+                MessageBox.Show("Veuillez sélectionner une commande à sauvegarder.");
+                return;
+            }
+
+            var dialog = new SaveFileDialog
+            {
+                Filter = "Fichiers XML (*.xml)|*.xml",
+                FileName = $"commande_{commandeSelectionnee.Id}.xml"
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                try
+                {
+                    var serializer = new XmlSerializer(typeof(Commande));
+                    using var fs = new FileStream(dialog.FileName, FileMode.Create);
+                    serializer.Serialize(fs, commandeSelectionnee);
+
+                    MessageBox.Show("Commande sauvegardée avec succès !");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erreur lors de la sauvegarde : {ex.Message}");
+                }
+            }
+        }
+
+        private void ChargerXml_Click(object sender, RoutedEventArgs e)
+        {
+            var openFileDialog = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "Fichiers XML (*.xml)|*.xml"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    var serializer = new XmlSerializer(typeof(Commande));
+                    using var fs = new FileStream(openFileDialog.FileName, FileMode.Open);
+                    var commande = (Commande)serializer.Deserialize(fs);
+
+                    if (commande != null)
+                    {
+                        Commandes.Add(commande);
+                        CommandesDataGrid.Items.Refresh(); // Important si DataGrid lié
+                        MessageBox.Show("Commande chargée et ajoutée !");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erreur : {ex.Message}");
+                }
+            }
+        }
+
+
 
 
     }

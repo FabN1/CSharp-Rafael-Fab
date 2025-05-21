@@ -10,6 +10,7 @@ namespace Projet.Model.Entites
         private string type;
         private string email;
 
+        public Clients() { }
         public Clients(int id, string nom, string type, string email)
         {
             this.id = id;
@@ -19,7 +20,11 @@ namespace Projet.Model.Entites
         }
 
         // Getters & Setters
-        public int Id => id;
+        public int Id
+        {
+            get => id;
+            set => id = value;
+        }
 
         public string Nom
         {

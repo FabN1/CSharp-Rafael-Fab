@@ -1,8 +1,13 @@
 using System;
+using System.Xml.Serialization;
+
 
 namespace Projet.Model.Entites
 {
     [Serializable]
+    [XmlInclude(typeof(Ustensils))]
+    [XmlInclude(typeof(Figurines))]
+    [XmlInclude(typeof(Meubles))]
     public abstract class Produit
     {
         protected int id;
@@ -11,6 +16,7 @@ namespace Projet.Model.Entites
 
         public virtual string Categorie => "Inconnu";
 
+        public Produit() { }
         protected Produit(int id, string nom, TypeDeBois typeDeBois)
         {
             this.id = id;

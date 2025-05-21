@@ -55,3 +55,6 @@ H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.AssemblyReference.cache
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.Up2Date
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.AssemblyReference.cache
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.Up2Date
