@@ -60,3 +60,5 @@ C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-win
 C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\Projet.csproj.Up2Date
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\ParametresWindow.baml
 H:\informatique\C Sharp\projet C#\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\ParametresWindow.g.cs
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\ParametresWindow.baml
+C:\Users\rafae\Source\Repos\CSharp-Rafael-Fab\Projet\Projet\obj\Debug\net8.0-windows\View\ParametresWindow.g.cs

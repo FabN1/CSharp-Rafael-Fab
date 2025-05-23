@@ -1,97 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\",
+  "WorkspaceRootPath": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\myappparammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\myappparammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\parametreswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\parametreswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\parametreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\parametreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\typedebois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\typedebois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\meubles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\meubles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\donneesapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\donneesapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\ustensils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\ustensils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\model\\entities\\figurines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\figurines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\figurines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\ajouterobjetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterobjetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\ajouterobjetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterobjetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\ajouterclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\ajouterclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\ajouterobjetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterobjetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\ajouterobjetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterobjetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\ajouterclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\ajouterclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\meubles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\meubles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\donneesapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\donneesapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\parametreswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\parametreswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\view\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\parametreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\parametreswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\myappparammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\myappparammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|h:\\informatique\\c sharp\\projet c#\\csharp-rafael-fab\\projet\\projet\\projet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\typedebois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\typedebois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\model\\entities\\ustensils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\model\\entities\\ustensils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\view\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|c:\\users\\rafae\\source\\repos\\csharp-rafael-fab\\projet\\projet\\projet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2EA64278-2761-4E1C-941A-D5A6657228E9}|Projet\\Projet.csproj|solutionrelative:projet\\projet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -102,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -113,28 +117,110 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AjouterClientWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Projet\\View\\AjouterClientWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml.cs",
+              "RelativeToolTip": "Projet\\View\\AjouterClientWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:01:51.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ParametresWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Projet\\View\\ParametresWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml.cs",
+              "RelativeToolTip": "Projet\\View\\ParametresWindow.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA4wCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:36:49.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ParametresWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml",
+              "RelativeDocumentMoniker": "Projet\\View\\ParametresWindow.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml",
+              "RelativeToolTip": "Projet\\View\\ParametresWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-21T16:35:40.064Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "AjouterObjetWindow.xaml.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Projet\\View\\AjouterObjetWindow.xaml.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml.cs",
-              "RelativeToolTip": "Projet\\View\\AjouterObjetWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBoAAABfAAAAAAAAAA==",
+              "Title": "MyAppParamManager.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\MyAppParamManager.cs",
+              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\MyAppParamManager.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\MyAppParamManager.cs",
+              "RelativeToolTip": "Projet\\Model\\Entities\\MyAppParamManager.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T17:49:17.164Z"
+              "WhenOpened": "2025-05-21T14:56:44.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 6,
+              "Title": "AjouterObjetWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml",
+              "RelativeDocumentMoniker": "Projet\\View\\AjouterObjetWindow.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml",
+              "RelativeToolTip": "Projet\\View\\AjouterObjetWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T18:05:50.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AjouterClientWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml",
+              "RelativeDocumentMoniker": "Projet\\View\\AjouterClientWindow.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml",
+              "RelativeToolTip": "Projet\\View\\AjouterClientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T18:05:35.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DonneesApplication.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\DonneesApplication.cs",
+              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\DonneesApplication.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\DonneesApplication.cs",
+              "RelativeToolTip": "Projet\\Model\\Entities\\DonneesApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:59:37.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AjouterObjetWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Projet\\View\\AjouterObjetWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml.cs",
+              "RelativeToolTip": "Projet\\View\\AjouterObjetWindow.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA2wBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:49:17.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "App.g.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "RelativeDocumentMoniker": "Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "RelativeToolTip": "Projet\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,134 +228,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Projet\\View\\MainWindow.xaml.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "Projet\\View\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABsBAAAAAAAAAAAowCoBAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA6wCIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T17:52:12.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Projet\\View\\MainWindow.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml",
-              "RelativeToolTip": "Projet\\View\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T17:47:51.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Commande.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Commande.cs",
-              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Commande.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Commande.cs",
-              "RelativeToolTip": "Projet\\Model\\Entities\\Commande.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAywBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:25:30.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyAppParamManager.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\MyAppParamManager.cs",
-              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\MyAppParamManager.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\MyAppParamManager.cs",
-              "RelativeToolTip": "Projet\\Model\\Entities\\MyAppParamManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAswC0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:11:14.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ParametresWindow.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml",
-              "RelativeDocumentMoniker": "Projet\\View\\ParametresWindow.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml",
-              "RelativeToolTip": "Projet\\View\\ParametresWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-21T13:25:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ParametresWindow.xaml.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Projet\\View\\ParametresWindow.xaml.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\ParametresWindow.xaml.cs",
-              "RelativeToolTip": "Projet\\View\\ParametresWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:25:38.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "Projet\\AssemblyInfo.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\AssemblyInfo.cs",
-              "RelativeToolTip": "Projet\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T10:40:10.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DonneesApplication.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\DonneesApplication.cs",
-              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\DonneesApplication.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\DonneesApplication.cs",
-              "RelativeToolTip": "Projet\\Model\\Entities\\DonneesApplication.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T17:59:37.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AjouterClientWindow.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml",
-              "RelativeDocumentMoniker": "Projet\\View\\AjouterClientWindow.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterClientWindow.xaml",
-              "RelativeToolTip": "Projet\\View\\AjouterClientWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-20T18:05:35.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AjouterObjetWindow.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml",
-              "RelativeDocumentMoniker": "Projet\\View\\AjouterObjetWindow.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\AjouterObjetWindow.xaml",
-              "RelativeToolTip": "Projet\\View\\AjouterObjetWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-20T18:05:50.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Projet\\View\\LoginWindow.xaml.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml.cs",
               "RelativeToolTip": "Projet\\View\\LoginWindow.xaml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -277,22 +253,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 16,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "Projet\\View\\LoginWindow.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\LoginWindow.xaml",
               "RelativeToolTip": "Projet\\View\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-19T17:51:51.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Projet\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\View\\MainWindow.xaml",
+              "RelativeToolTip": "Projet\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T17:47:51.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Commande.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Commande.cs",
+              "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Commande.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Commande.cs",
+              "RelativeToolTip": "Projet\\Model\\Entities\\Commande.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAcwFwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T18:25:30.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Clients.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Clients.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Clients.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Clients.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Clients.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Clients.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\Clients.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwBoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -300,11 +301,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Ustensils.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Ustensils.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Ustensils.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Ustensils.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Ustensils.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Ustensils.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\Ustensils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -312,35 +313,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Meubles.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Meubles.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Meubles.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Meubles.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Meubles.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Meubles.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\Meubles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:19:28.72Z"
+              "WhenOpened": "2025-05-18T18:19:28.72Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "Figurines.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Figurines.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Figurines.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Figurines.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Figurines.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Figurines.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\Figurines.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:19:03.532Z"
+              "WhenOpened": "2025-05-18T18:19:03.532Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "TypeDeBois.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\TypeDeBois.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\TypeDeBois.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\TypeDeBois.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\TypeDeBois.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\TypeDeBois.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\TypeDeBois.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -348,23 +351,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Produit.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Produit.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Produit.cs",
               "RelativeDocumentMoniker": "Projet\\Model\\Entities\\Produit.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Produit.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Model\\Entities\\Produit.cs",
               "RelativeToolTip": "Projet\\Model\\Entities\\Produit.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:12:11.085Z"
+              "WhenOpened": "2025-05-18T18:12:11.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Projet.csproj",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
+              "DocumentMoniker": "C:\\Users\\rafae\\Source\\Repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
               "RelativeDocumentMoniker": "Projet\\Projet.csproj",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
+              "ToolTip": "C:\\Users\\rafae\\Source\\Repos\\CSharp-Rafael-Fab\\Projet\\Projet\\Projet.csproj",
               "RelativeToolTip": "Projet\\Projet.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -372,23 +376,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Projet\\App.xaml.cs",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml.cs",
-              "RelativeToolTip": "Projet\\App.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAkAAABAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Projet\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\AssemblyInfo.cs",
+              "RelativeToolTip": "Projet\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T10:40:50.927Z"
+              "WhenOpened": "2025-05-17T10:40:10.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Projet\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml.cs",
+              "RelativeToolTip": "Projet\\App.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:40:50.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "App.xaml",
-              "DocumentMoniker": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml",
               "RelativeDocumentMoniker": "Projet\\App.xaml",
-              "ToolTip": "H:\\informatique\\C Sharp\\projet C#\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml",
+              "ToolTip": "C:\\Users\\rafae\\source\\repos\\CSharp-Rafael-Fab\\Projet\\Projet\\App.xaml",
               "RelativeToolTip": "Projet\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-17T10:40:29.543Z",

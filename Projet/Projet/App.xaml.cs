@@ -18,6 +18,7 @@ namespace Projet
             {
                 MessageBox.Show("Connexion réussie !");
                 MainWindow mainWindow = new MainWindow();
+                mainWindow.Closed += (s, e) => Application.Current.Shutdown();
                 mainWindow.Show();
             }
             else

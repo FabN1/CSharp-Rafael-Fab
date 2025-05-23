@@ -7,16 +7,16 @@ namespace Projet.Model.Entites
     public class Figurines : Produit
     {
         private float prix;
-        private string theme;
+        private string usage;
         public override string Categorie => "Figurine";
 
         public Figurines() { }
 
-        public Figurines(int id, string nom, TypeDeBois typeDeBois, float prix, string theme)
+        public Figurines(int id, string nom, TypeDeBois typeDeBois, float prix, string usage)
             : base(id, nom, typeDeBois)
         {
             this.prix = prix;
-            this.theme = theme;
+            this.usage = usage;
         }
 
         public float Prix
@@ -25,10 +25,10 @@ namespace Projet.Model.Entites
             set => prix = value;
         }
 
-        public string Theme
+        public string Usage
         {
-            get => theme;
-            set => theme = value;
+            get => usage;
+            set => usage = value;
         }
 
         public override double CalculerPrix()
@@ -38,7 +38,7 @@ namespace Projet.Model.Entites
 
         public override string ToString()
         {
-            return base.ToString() + $" - Figurine (thème: {theme}, prix: {prix})";
+            return base.ToString() + $" - Figurine (thème: {usage}, prix: {prix})";
         }
 
         public override bool Equals(object obj)
